@@ -1,0 +1,24 @@
+Cree un dossier robots et ouvert ds VDSCode
+
+Terminal git init
+gitignore
+
+first commit (public)
+
+ouvert github
+ 
+ouvert github desktop
+add a local repository
+
+envoyer le lien aux co-equipiers NON!
+les coequipiers ouvrent ds desktop et clonent
+apr's il peuvent plus pusher...
+Ca c'est bon juste pour donner une visibilité
+
+Settings > Collaborators inviter
+Le collaborateur doit accepter l'invitation
+
+une classe - un fichier
+
+
+
