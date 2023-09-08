@@ -4,6 +4,9 @@ Terminal git init
 gitignore
 
 first commit (public)
+              ======
+(ou git add . puis git commit -m "first commit"
+ds le Terminal)
 
 ouvert github
  
@@ -11,11 +14,11 @@ ouvert github desktop
 add a local repository
 
 envoyer le lien aux co-equipiers NON!
-les coequipiers ouvrent ds desktop et clonent
-apr's il peuvent plus pusher...
-Ca c'est bon juste pour donner une visibilité
+les coéquipiers ouvrent ds desktop et clonent
+après il ne peuvent plus pusher...
+Ça c'est bon juste pour donner une visibilité
 
-Settings > Collaborators inviter
+Settings > Collaborators inviter CORRECT!
 Le collaborateur doit accepter l'invitation
 
 une classe - un fichier
