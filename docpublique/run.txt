@@ -1,0 +1,14 @@
+cd RobotWantedLeague
+dotnet build
+dotnet run
+
+TODO:
+1. Alice, pèse 6 578kg pour 17.76m de haut. La dernière fois qu’il a été vu il était en Albanie
+2. Bob, pèse 10 871kg pour 15m de haut. La dernière fois qu’il a été vu il était au Bénin
+3. Cédric, pèse 1 002kg pour 3.12m de haut. La dernière fois qu’il a été vu il était en Cambodge
+
+[{name="Alice", weight_kg=6_578, height_m=17.76, country="Albanie"},
+{name="Bob", weight_kg=10_871, height_m=15, country="Bénin"},
+{name="Cédric", weight_kg=1_002, height_m=3.12, country="Cambodge"}]
+2. Bob, pèse 10 871kg pour 15m de haut. La dernière fois qu’il a été vu il était au Bénin
+3. Cédric, pèse 1 002kg pour 3.12m de haut. La dernière fois qu’il a été vu il était en Cambodge
