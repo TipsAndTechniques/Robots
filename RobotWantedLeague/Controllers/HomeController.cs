@@ -6,10 +6,10 @@ namespace RobotWantedLeague.Controllers;
 
 public class HomeController : Controller
 {
-    // public string Index(string name, string weight, string height, string country)
-    // {
-    //     return $@"\bob?name={name}&weight:{weight}&height={height}&country:{country}";
-    // }
+    public string Toto(string name, string weight, string height, string country)
+    {
+        return $@"\bob?name={name}&weight:{weight}&height={height}&country:{country}";
+    }
     private readonly ILogger<HomeController> _logger;
 
     public HomeController(ILogger<HomeController> logger)
