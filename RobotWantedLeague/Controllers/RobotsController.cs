@@ -44,12 +44,10 @@ public class RobotsController : Controller
     }
 
     public IActionResult Index()
-
     {
         return View(RobotsService.listeRobots);
     }
     
-
     public IActionResult Privacy()
     {
         return View();
