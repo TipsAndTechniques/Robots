@@ -6,7 +6,12 @@ namespace RobotWantedLeague.Controllers;
 
 public class RobotsController : Controller
 {
-    private readonly ILogger<RobotsController> _logger;
+    public int id{get; set;}
+    public string Nom{get; set;}
+    public string Height{get; set;}
+    public string Weight{get; set;}
+    public string Country{get; set;}
+        private readonly ILogger<RobotsController> _logger;
 
     public RobotsController(ILogger<RobotsController> logger)
     {
