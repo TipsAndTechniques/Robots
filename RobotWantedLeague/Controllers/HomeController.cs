@@ -6,11 +6,7 @@ namespace RobotWantedLeague.Controllers;
 
 public class HomeController : Controller
 {
-<<<<<<< Updated upstream
-   
-=======
         
->>>>>>> Stashed changes
             
 public IActionResult Index()
     {
