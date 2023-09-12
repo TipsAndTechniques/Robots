@@ -1,4 +1,17 @@
-<div id="new-robot"></div>
+@model List<Robot> 
+@foreach (var robot in Model)
+{
+    <div class="card" style="width: 18rem">
+        <div class="card-body">
+            <h5 class="card-name">@robot.name</h5>
+            <h5 class="card-weight_kg">@robot.weight_kg kg</h5>
+            <h5 class="card-height_m">@robot.height_m m</h5>
+            <h5 class="card-country">@robot.country</h5>
+        </div>
+    </div>
+}
+
+@* <div id="new-robot"></div>
 
 <div class="card" style="width: 18rem">
   <div class="card-body">
@@ -7,7 +20,7 @@
     <h5 class="card-height_m">17,76 m</h5>
     <h5 class="card-country">Albany</h5>
   </div>
-</div>
+</div> *@
 
 <!-- <form hx-post="/robots/create-robot"
       hx-ext="json-enc"
