@@ -21,16 +21,29 @@ public class Robot
         this.weight_kg = weight_kg;
         this.country = country;
     }
-
 }
 public static class RobotsService
 {
+    static int nextId = 3;
     public static List<Robot> listeRobots = new List<Robot>()
     {
         new Robot(1, "Alice", "17.76 m", "6,578 kg", "Albanie"),
         new Robot(2, "Bob", "15 m", "10,871 kg", "Bénin"),
         new Robot(3, "Cédric", "3.12 m", "1,002 kg", "Cambodge")
     };
+
+    public static int GetNextId()
+    {
+        return nextId++;
+    }
+
+    public static void CreateANewRobot()
+    {
+        int i = GetNextId();
+        listeRobots.Add(
+            new Robot(i, $"Nom{i}", $"{i * 10} m", $"{i * 100} kg", $"Pays{i}")
+        );
+    }
 
 }
 
@@ -43,11 +56,16 @@ public class RobotsController : Controller
         _logger = logger;
     }
 
+    public IActionResult CreateARobot(){
+        RobotsService.CreateANewRobot();
+        return View(RobotsService.listeRobots);
+    }
+
     public IActionResult Index()
     {
         return View(RobotsService.listeRobots);
     }
-    
+
     public IActionResult Privacy()
     {
         return View();

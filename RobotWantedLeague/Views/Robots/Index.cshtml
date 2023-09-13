@@ -1,38 +1,16 @@
-@model List<Robot> 
-@foreach (var robot in Model)
-{
-    <div class="card" style="width: 18rem">
-        <div class="card-body">
-            <h5 class="card-name">@robot.name</h5>
-            <h5 class="card-weight_kg">@robot.weight_kg kg</h5>
-            <h5 class="card-height_m">@robot.height_m m</h5>
-            <h5 class="card-country">@robot.country</h5>
-        </div>
+@model List<Robot>
+  <p>
+    <a href="@Url.Action("Index", "CreateARobot")">Create a new wanted robot</a>
+  </p>
+  @foreach (var robot in Model) {
+  <div class="card" style="width: 18rem">
+    <div class="card-body">
+      <h5 class="card-name">@robot.name</h5>
+      <h5 class="card-weight_kg">@robot.weight_kg kg</h5>
+      <h5 class="card-height_m">@robot.height_m m</h5>
+      <h5 class="card-country">@robot.country</h5>
     </div>
-}
-
-@* <div id="new-robot"></div>
-
-<div class="card" style="width: 18rem">
-  <div class="card-body">
-    <h5 class="card-name">Alice</h5>
-    <h5 class="card-weight_kg">6,578 kg</h5>
-    <h5 class="card-height_m">17,76 m</h5>
-    <h5 class="card-country">Albany</h5>
   </div>
-</div> *@
+  }
 
-<!-- <form hx-post="/robots/create-robot"
-      hx-ext="json-enc"
-      hx-trigger="submit"
-      hx-target="#new-robot"
-      hx-swap="afterbegin">
-
-    <labe  class="form-label">Nom 
-        <input type=text name="name" class="form-control" placeholder="Bob Le Chef"></label><br>
-    <label  class="form-label">Commentaire 
-        <textarea type=text name="comment"  class="form-control" placeholder="blah blah blah" ></textarea>
-    </label>
-    <br>
-    <input type=submit  class="btn btn-primary">
-</form> -->
+ </Robot>

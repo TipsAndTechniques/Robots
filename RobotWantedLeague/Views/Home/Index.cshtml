@@ -40,13 +40,16 @@
         <li><a href="#" title="voir andre">Cédric</a></li>
         <li>
           <button
-            hx-post="/Robots/Controller/Display"
+            hx-post="/Robots/Controller/Index"
             hx-trigger="click"
             hx-target="#parent-div"
             hx-swap="outerHTML"
           >
             Bob
           </button>
+        </li>
+        <li>
+          <a href="@Url.Action("Index", "Robots")">Go to the Robots Page</a>
         </li>
       </ul>
     </div>
@@ -57,14 +60,3 @@
   </body>
 </html>
 
-@* ==================================================================
-<div class="text-center">
-  <h1 class="display-4">Welcome</h1>
-  <p>
-    Learn about
-    <a href="https://docs.microsoft.com/aspnet/core"
-      >building Web apps with ASP.NET Core</a
-    >.
-  </p>
-</div>
-*@
