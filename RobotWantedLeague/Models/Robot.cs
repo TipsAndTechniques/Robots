@@ -1,28 +1,35 @@
-namespace RobotWantedLeague.Models;
+namespace RobotsWantedLeague.Models;
 
 public class Robot
 {
     public int Id { get; set; }
     public string Name { get; set; }
-    public M Height { get; set; }
-    public Kg Weight { get; set; }
-    public string Country { get; set; }
 
-    public Robot (int Id, string Name, M Height, Kg Weight, string Country){
+    /**
+     * Weight in kg.
+     */
+    public int Weight { get; set; }
+
+    /**
+     * Height in m.
+     */
+    public int Height { get; set; }
+    public string Country { get; set; }
+    public Queue<string> Countries { get; set; }
+
+    public Robot(int Id, string Name, int Weight, int Height, string Country)
+    {
         this.Id = Id;
         this.Name = Name;
-        this.Height = Height;
         this.Weight = Weight;
-        this.Country= Country; 
+        this.Height = Height;
+        this.Country = Country;
+        Countries = new Queue<string>();
+        Countries.Enqueue(Country);
     }
-
-}
-
-public class M
-{
-    public int m { get; set; }
-}
-public class Kg
-{
-    public int kg { get; set; }
+    public void ChangerPays(string Country)
+    {
+        this.Country = Country;
+        Countries.Enqueue(Country);
+    }
 }

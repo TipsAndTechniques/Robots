@@ -1,6 +1,6 @@
 namespace RobotWantedLeague.Services;
 
-using RobotWantedLeague.Models;
+using RobotsWantedLeague.Models;
 public class RobotsService
 {
 
@@ -12,7 +12,7 @@ public class RobotsService
     {
         robots = new List<Robot>();
     }
-    public Robot AddRobot(string name, M height, Kg weight, string country)
+    public Robot AddRobot(string name, int height, int weight, string country)
     {
         int id = 0;
         var robot = new Robot(id, name, height, weight, country);
@@ -20,7 +20,6 @@ public class RobotsService
         return robot;
     }
 
-    
+
 
 }
-    
